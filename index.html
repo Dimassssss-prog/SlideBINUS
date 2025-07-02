@@ -3,88 +3,33 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Formulir Pendaftaran</title>
+    <title>Profil Education Counsellor</title>
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
     <nav>
         <img src="LogoBINUS.jpg" alt="Logo BINUS" class="logo" />
         <div class="nav-links">
-            <a href="index.html">EC Profile</a>
+            <a href="index.html" class="active">EC Profile</a>
             <a href="slides.html">Slides</a>
-            <a href="formulir.html" class="active">Forms</a>
+            <a href="formulir.html">Forms</a>
         </div>
     </nav>
     <main>
-        <h2>PENDAFTARAN CALON BINUSIAN</h2>
-        <form id="registrationForm">
-            <label for="nama">Nama Lengkap :</label>
-            <input type="text" id="nama" name="nama" required />
-
-            <label for="email">Email Aktif :</label>
-            <input type="email" id="email" name="email" required />
-
-            <label for="telp">No HP :</label>
-            <input type="tel" id="telp" name="telp" required />
-
-            <label for="asalSekolah">Asal Sekolah :</label>
-            <input type="text" id="asalSekolah" name="asalSekolah" required />
-
-            <label for="jurusan">Jurusan yang di minati :</label>
-            <input type="text" id="jurusan" name="jurusan" required />
-
-            <button type="submit">Save data &amp;<br />Chat Education Counsellor</button>
-        </form>
+        <img src="profile.jpeg" alt="Profile Picture" class="profile-pic" />
+        <h1>Dimas Zafran</h1>
+        <p>Education Counsellor BINUS University.</p>
+        <p>
+            Pursuing a Film major at <a href="https://instagram.com/binus_alsut" target="_blank" rel="noopener noreferrer" style="text-decoration:none;">Binus @Alam Sutra</a>,<br />
+            while contributing to the Marketing Division of <a href="https://instagram.com/binusuniversityofficial" target="_blank" rel="noopener noreferrer" style="text-decoration:none;">BINUS University</a>.
+        </p>
     </main>
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbxBLRwxguHbVH_V-VRcg60Necbp1R6qL6LB8oV3De0om7Lekgkwk93pSXDnY7dWm8aKPA/exec';
-
-        document.getElementById("registrationForm").addEventListener("submit", async function (e) {
-            e.preventDefault();
-
-            const form = e.target;
-            const nama = form.nama.value.trim();
-            const email = form.email.value.trim();
-            const telp = form.telp.value.trim();
-            const asalSekolah = form.asalSekolah.value.trim();
-            const jurusan = form.jurusan.value.trim();
-
-            if (!nama || !email || !telp || !asalSekolah || !jurusan) {
-                alert("Mohon lengkapi semua data.");
-                return;
-            }
-
-            const formData = new FormData();
-            formData.append("nama", nama);
-            formData.append("email", email);
-            formData.append("telp", telp);
-            formData.append("asalSekolah", asalSekolah);
-            formData.append("jurusan", jurusan);
-
-            try {
-                await fetch(scriptURL, {
-                    method: 'POST',
-                    body: formData
-                });
-
-                const message = 
-`PENDAFTARAN TES CALON BINUSIAN
-Nama Lengkap : ${nama}
-Email Aktif : ${email}
-No HP : ${telp}
-Asal Sekolah : ${asalSekolah}
-Jurusan yang di minati : ${jurusan}`;
-
-                const encodedMessage = encodeURIComponent(message);
-                const whatsappNumber = "6281312000768";
-                const whatsappUrl = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodedMessage}`;
-                window.location.href = whatsappUrl;
-
-            } catch (error) {
-                alert('Gagal mengirim data. Silakan coba lagi.');
-                console.error('Error:', error);
-            }
-        });
-    </script>
+    <footer>
+        <p>
+            Connect with me: <br />
+            <a href="https://instagram.com/dimaszaf" target="_blank" rel="noopener noreferrer">@dimaszaf</a> |
+            <a href="mailto:dimas.hamzah@binus.ac.id">dimas.hamzah@binus.ac.id</a>
+        </p>
+    </footer>
 </body>
 </html>
