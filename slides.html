@@ -3,98 +3,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>BINUS SLIDE</title>
-    <style>
-        /* Reset and base */
-        * {
-            box-sizing: border-box;
-        }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-                Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-            margin: 0;
-            background-color: #fff;
-            color: #1d1d1f;
-            line-height: 1.6;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
-        a {
-            color: inherit;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        nav {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 60px;
-            background-color: #f8f8f8;
-            border-bottom: 1px solid #d2d2d7;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 0 24px;
-            z-index: 1000;
-            font-weight: 600;
-            font-size: 1rem;
-            color: #1d1d1f;
-        }
-        nav .logo {
-            height: 32px;
-            cursor: pointer;
-        }
-        nav .nav-links {
-            display: flex;
-            gap: 24px;
-        }
-        nav .nav-links a {
-            color: #1d1d1f;
-            font-weight: 600;
-            font-size: 1rem;
-            padding: 8px 0;
-            border-bottom: 2px solid transparent;
-            transition: border-color 0.3s ease;
-        }
-        nav .nav-links a.active,
-        nav .nav-links a:hover {
-            border-bottom: 2px solid #0071e3;
-            color: #0071e3;
-        }
-        main {
-            max-width: 900px;
-            margin: 80px auto 40px auto;
-            padding: 0 24px;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 16px;
-        }
-        main img {
-            width: 100%;
-            height: auto;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px rgb(0 0 0 / 0.1);
-            transition: transform 0.3s ease;
-            cursor: pointer;
-        }
-        main img:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 12px rgb(0 0 0 / 0.15);
-        }
-        @media (max-width: 600px) {
-            nav {
-                padding: 0 16px;
-            }
-            main {
-                margin: 70px 16px 32px 16px;
-                padding: 0;
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+    <title>Slides</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
     <nav>
@@ -102,55 +12,125 @@
         <div class="nav-links">
             <a href="index.html">EC Profile</a>
             <a href="slides.html" class="active">Slides</a>
-            <a href="buy-form.html">Forms</a>
+            <a href="formulir.html">Forms</a>
         </div>
     </nav>
     <main>
-        <img src="ppt1.jpeg" alt="Slide 1" />
-        <img src="ppt2.jpeg" alt="Slide 2" />
-        <img src="ppt3.jpeg" alt="Slide 3" />
-        <img src="ppt4.jpeg" alt="Slide 4" />
-        <img src="ppt5.jpeg" alt="Slide 5" />
-        <img src="ppt6.jpeg" alt="Slide 6" />
-        <img src="ppt7.jpeg" alt="Slide 7" />
-        <img src="ppt8.jpeg" alt="Slide 8" />
-        <img src="ppt9.jpeg" alt="Slide 9" />
-        <img src="ppt10.jpeg" alt="Slide 10" />
-        <img src="ppt11.jpeg" alt="Slide 11" />
-        <img src="ppt12.jpeg" alt="Slide 12" />
-        <img src="ppt13.jpeg" alt="Slide 13" />
-        <img src="ppt14.jpeg" alt="Slide 14" />
-        <img src="ppt15.jpeg" alt="Slide 15" />
-        <img src="ppt16.jpeg" alt="Slide 16" />
-        <img src="ppt17.jpeg" alt="Slide 17" />
-        <img src="ppt18.jpeg" alt="Slide 18" />
-        <img src="ppt19.jpeg" alt="Slide 19" />
-        <img src="ppt20.jpeg" alt="Slide 20" />
-        <img src="ppt21.jpeg" alt="Slide 21" />
-        <img src="ppt22.jpeg" alt="Slide 22" />
-        <img src="ppt23.jpeg" alt="Slide 23" />
-        <img src="ppt24.jpeg" alt="Slide 24" />
-        <img src="ppt25.jpeg" alt="Slide 25" />
-        <img src="ppt26.jpeg" alt="Slide 26" />
-        <img src="ppt27.jpeg" alt="Slide 27" />
-        <img src="ppt28.jpeg" alt="Slide 28" />
-        <img src="ppt29.jpeg" alt="Slide 29" />
-        <img src="ppt30.jpeg" alt="Slide 30" />
-        <img src="ppt31.jpeg" alt="Slide 31" />
-        <img src="ppt32.jpeg" alt="Slide 32" />
-        <img src="ppt33.jpeg" alt="Slide 33" />
-        <img src="ppt34.jpeg" alt="Slide 34" />
-        <img src="ppt35.jpeg" alt="Slide 35" />
-        <img src="ppt36.jpeg" alt="Slide 36" />
-        <img src="ppt37.jpeg" alt="Slide 37" />
-        <img src="ppt38.jpeg" alt="Slide 38" />
-        <img src="ppt39.jpeg" alt="Slide 39" />
-        <img src="ppt40.jpeg" alt="Slide 40" />
-        <img src="ppt41.jpeg" alt="Slide 41" />
-        <img src="ppt42.jpeg" alt="Slide 42" />
-        <img src="ppt43.jpeg" alt="Slide 43" />
-        <img src="ppt44.jpeg" alt="Slide 44" />
-        <img src="ppt45.jpeg" alt="Slide 45" />
+        <img src="ppt1.jpeg" alt="Slide 1" class="slide-image" />
+        <img src="ppt2.jpeg" alt="Slide 2" class="slide-image" />
+        <img src="ppt3.jpeg" alt="Slide 3" class="slide-image" />
+        <img src="ppt4.jpeg" alt="Slide 4" class="slide-image" />
+        <img src="ppt5.jpeg" alt="Slide 5" class="slide-image" />
+        <img src="ppt6.jpeg" alt="Slide 6" class="slide-image" />
+        <img src="ppt7.jpeg" alt="Slide 7" class="slide-image" />
+        <img src="ppt8.jpeg" alt="Slide 8" class="slide-image" />
+        <img src="ppt9.jpeg" alt="Slide 9" class="slide-image" />
+        <img src="ppt10.jpeg" alt="Slide 10" class="slide-image" />
+        <img src="ppt11.jpeg" alt="Slide 11" class="slide-image" />
+        <img src="ppt12.jpeg" alt="Slide 12" class="slide-image" />
+        <img src="ppt13.jpeg" alt="Slide 13" class="slide-image" />
+        <img src="ppt14.jpeg" alt="Slide 14" class="slide-image" />
+        <img src="ppt15.jpeg" alt="Slide 15" class="slide-image" />
+        <img src="ppt16.jpeg" alt="Slide 16" class="slide-image" />
+        <img src="ppt17.jpeg" alt="Slide 17" class="slide-image" />
+        <img src="ppt18.jpeg" alt="Slide 18" class="slide-image" />
+        <img src="ppt19.jpeg" alt="Slide 19" class="slide-image" />
+        <img src="ppt20.jpeg" alt="Slide 20" class="slide-image" />
+        <img src="ppt21.jpeg" alt="Slide 21" class="slide-image" />
+        <img src="ppt22.jpeg" alt="Slide 22" class="slide-image" />
+        <img src="ppt23.jpeg" alt="Slide 23" class="slide-image" />
+        <img src="ppt24.jpeg" alt="Slide 24" class="slide-image" />
+        <img src="ppt25.jpeg" alt="Slide 25" class="slide-image" />
+        <img src="ppt26.jpeg" alt="Slide 26" class="slide-image" />
+        <img src="ppt27.jpeg" alt="Slide 27" class="slide-image" />
+        <img src="ppt28.jpeg" alt="Slide 28" class="slide-image" />
+        <img src="ppt29.jpeg" alt="Slide 29" class="slide-image" />
+        <img src="ppt30.jpeg" alt="Slide 30" class="slide-image" />
+        <img src="ppt31.jpeg" alt="Slide 31" class="slide-image" />
+        <img src="ppt32.jpeg" alt="Slide 32" class="slide-image" />
+        <img src="ppt33.jpeg" alt="Slide 33" class="slide-image" />
+        <img src="ppt34.jpeg" alt="Slide 34" class="slide-image" />
+        <img src="ppt35.jpeg" alt="Slide 35" class="slide-image" />
+        <img src="ppt36.jpeg" alt="Slide 36" class="slide-image" />
+        <img src="ppt37.jpeg" alt="Slide 37" class="slide-image" />
+        <img src="ppt38.jpeg" alt="Slide 38" class="slide-image" />
+        <img src="ppt39.jpeg" alt="Slide 39" class="slide-image" />
+        <img src="ppt40.jpeg" alt="Slide 40" class="slide-image" />
+        <img src="ppt41.jpeg" alt="Slide 41" class="slide-image" />
+        <img src="ppt42.jpeg" alt="Slide 42" class="slide-image" />
+        <img src="ppt43.jpeg" alt="Slide 43" class="slide-image" />
+        <img src="ppt44.jpeg" alt="Slide 44" class="slide-image" />
+        <img src="ppt45.jpeg" alt="Slide 45" class="slide-image" />
+
+        <!-- Modal for image preview -->
+        <div id="modal" class="modal">
+            <span id="modal-close" class="modal-close">&times;</span>
+            <img id="modal-image" class="modal-content" src="" alt="Preview" />
+            <button id="modal-prev" class="modal-nav">&#10094;</button>
+            <button id="modal-next" class="modal-nav">&#10095;</button>
+        </div>
     </main>
+
+    <script>
+        const images = document.querySelectorAll('.slide-image');
+        const modal = document.getElementById('modal');
+        const modalImage = document.getElementById('modal-image');
+        const modalClose = document.getElementById('modal-close');
+        const modalPrev = document.getElementById('modal-prev');
+        const modalNext = document.getElementById('modal-next');
+
+        let currentIndex = 0;
+
+        function openModal(index) {
+            currentIndex = index;
+            modal.style.display = 'block';
+            modalImage.src = images[currentIndex].src;
+            document.body.style.overflow = 'hidden'; // Disable background scroll
+        }
+
+        function closeModal() {
+            modal.style.display = 'none';
+            document.body.style.overflow = ''; // Enable background scroll
+        }
+
+        function showPrev() {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            modalImage.src = images[currentIndex].src;
+        }
+
+        function showNext() {
+            currentIndex = (currentIndex + 1) % images.length;
+            modalImage.src = images[currentIndex].src;
+        }
+
+        images.forEach((img, index) => {
+            img.style.cursor = 'pointer';
+            img.addEventListener('click', () => openModal(index));
+        });
+
+        modalClose.addEventListener('click', closeModal);
+        modalPrev.addEventListener('click', showPrev);
+        modalNext.addEventListener('click', showNext);
+
+        // Close modal when clicking outside the image
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                closeModal();
+            }
+        });
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (modal.style.display === 'block') {
+                if (e.key === 'ArrowLeft') {
+                    showPrev();
+                } else if (e.key === 'ArrowRight') {
+                    showNext();
+                } else if (e.key === 'Escape') {
+                    closeModal();
+                }
+            }
+        });
+    </script>
 </body>
 </html>
