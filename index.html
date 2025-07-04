@@ -31,5 +31,33 @@
             <a href="mailto:dimas.hamzah@binus.ac.id">dimas.hamzah@binus.ac.id</a>
         </p>
     </footer>
+    <script>
+        // Swipe navigation script
+        (function() {
+            let touchstartX = 0;
+            let touchendX = 0;
+
+            function handleGesture() {
+                const threshold = 50; // Minimum distance for swipe
+                if (touchendX < touchstartX - threshold) {
+                    // Swipe left - go to slides.html
+                    window.location.href = 'slides.html';
+                }
+                if (touchendX > touchstartX + threshold) {
+                    // Swipe right - no previous page, do nothing
+                    // Do nothing or optionally alert user
+                }
+            }
+
+            document.addEventListener('touchstart', function(event) {
+                touchstartX = event.changedTouches[0].screenX;
+            }, false);
+
+            document.addEventListener('touchend', function(event) {
+                touchendX = event.changedTouches[0].screenX;
+                handleGesture();
+            }, false);
+        })();
+    </script>
 </body>
 </html>
